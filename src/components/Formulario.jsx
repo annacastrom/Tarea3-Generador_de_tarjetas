@@ -1,4 +1,5 @@
 import React from 'react'
+import './Formulario.css'
 
 function Formulario({nombre, lenguaje, rolProfesional, setNombre, setLenguaje, setRolProfesional, generarTarjeta}) {
   return (

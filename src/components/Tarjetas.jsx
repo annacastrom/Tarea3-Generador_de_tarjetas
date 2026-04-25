@@ -1,4 +1,5 @@
 import React from 'react'
+import './Tarjetas.css'
 
 function Tarjetas({nombre, lenguaje, rolProfesional, limpiarTarjeta}) {
 
@@ -6,14 +7,15 @@ function Tarjetas({nombre, lenguaje, rolProfesional, limpiarTarjeta}) {
 
   return (
     <div className='tarjeta-contenedor'>
-        <div className='tarjeta-avatar'>
-            {inciales}
-        </div>
         
         <div className='tarjeta-info'>
+            <div className='tarjeta-avatar'>
+                {inciales}
+            </div>
             <p className='tarjeta-nombre'>{nombre}</p>
             <p className='tarjeta-lenguaje-text'>Lenguaje favorito: <span className='tarjeta-lenguaje'>{lenguaje}</span>
             </p>
+            <hr className='tarjeta-divisor'/>
             <p className='tarjeta-rol'>{rolProfesional}</p>
         </div>
 
